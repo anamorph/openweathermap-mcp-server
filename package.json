@@ -1,0 +1,29 @@
+{
+  "name": "weather-mcp-server",
+  "version": "1.0.0",
+  "description": "Weather MCP Server using AgentCore and OpenWeatherMap API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "tsc",
+    "deploy": "cdk deploy",
+    "synth": "cdk synth"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.7.7",
+    "@aws-sdk/client-ssm": "^3.682.0"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.164.1",
+    "aws-cdk-lib": "^2.164.1",
+    "constructs": "^10.3.0",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2"
+  },
+  "overrides": {
+    "inflight": "^1.0.7",
+    "node-domexception": false
+  }
+}
